@@ -7,7 +7,7 @@
 
 :root {
   --secondaryColor: #080808;
-  --primaryClor: #fff;
+  --primaryClor: #e2d9d9d5;
 }
 body {
   background: var(--secondaryColor);
@@ -15,7 +15,7 @@ body {
 }
 
 .dark-Theme {
-  --secondaryColor: #fff;
+  --secondaryColor: #e2d9d9d5;
   --primaryClor: #080808;
 }
 
@@ -62,7 +62,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: var(--primaryClor);
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -104,7 +104,7 @@ nav ul li a:hover::after {
 
 #about {
   padding: 80px 0;
-  color: #ababab;
+  color: var(--primaryClor);
 }
 
 .row {
@@ -129,7 +129,7 @@ nav ul li a:hover::after {
 .sub-title {
   font-size: 60px;
   font-weight: 600;
-  color: #fff;
+  color: var(--primaryClor);
 }
 
 .tab-titles {
@@ -191,7 +191,8 @@ nav ul li a:hover::after {
 }
 
 .services-list div {
-  background: #262626;
+  /* background: #262626; */
+  background: var(--primaryClor);
   font-size: 13px;
   padding: 40px;
   font-weight: 300;
@@ -203,7 +204,9 @@ nav ul li a:hover::after {
   font-size: 50px;
   margin-bottom: 30px;
 }
-
+.services-list div {
+  color: var(--secondaryColor);
+}
 .services-list div h2 {
   font-size: 30px;
   font-weight: 500;
@@ -212,7 +215,7 @@ nav ul li a:hover::after {
 
 .services-list div a {
   text-decoration: none;
-  color: #fff;
+  color: var(--secondaryColor);
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
@@ -283,7 +286,7 @@ nav ul li a:hover::after {
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
-  background: #fff;
+  background: var(--primaryClor);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -302,7 +305,8 @@ nav ul li a:hover::after {
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
-  color: #fff;
+  color: var(--primaryClor);
+  /* background-color: var(--primaryClor); */
   transition: background 0.5s;
 }
 
@@ -362,10 +366,10 @@ form textarea {
   width: 100%;
   border: 0;
   outline: 0;
-  background: #262626;
+  background: var(--primaryClor);
   padding: 15px;
   margin: 15px 0;
-  color: #fff;
+  color: var(--secondaryColor);
   border-radius: 6px;
 }
 
@@ -377,6 +381,7 @@ form .btn2 {
 }
 
 .copyright {
+  color: var(--primaryClor);
   width: 100%;
   text-align: center;
   padding: 25px 0;
@@ -470,13 +475,48 @@ nav .fas {
     font-size: 14px;
   }
 }
+@media (max-width: 700px) {
+  #som {
+    display: block;
+  }
+  #header {
+    background-image: url(images/head.png);
+    background-size: 300px;
+    background-position: right;
+  }
+  .header-text {
+    margin-top: 130px;
+    /* font-size: 40px; */
+  }
+}
 @media (max-width: 500px) {
   #som {
     display: block;
   }
+  #header {
+    background-image: url(images/head.png);
+    background-size: 250px;
+    background-position: right;
+  }
+  .header-text {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 460px) {
+  #som {
+    display: block;
+  }
+  #header {
+    background-image: url(images/head.png);
+    background-size: 220px;
+    background-position: right;
+  }
+  .header-text {
+    margin-top: 160px;
+  }
 }
 
 .gmail {
-  color: #fff;
+  color: var(--primaryClor);
   text-decoration: none;
 }
