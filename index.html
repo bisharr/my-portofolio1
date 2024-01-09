@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>bishar</title>
+    <script
+      src="https://kit.fontawesome.com/c25e8ed237.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <!-- <img id="logo" src="images/logo-1.jpg" class="logo" alt="logo" /> -->
+      <div>
+        <h1 class="logo-text">B</h1>
+        <span class="logo-text-span">ishar</span>
+      </div>
+      <ul id="sidemenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#portfolio">Portofolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><i class="fas fa-times" onclick="closemenu()"></i></li>
+      </ul>
+      <img class="icon" src="sun.png" alt="" />
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div id="header">
+      <div class=" home container">
+        <div class="header-text">
+          <p>Web developer</p>
+          <h1>
+            Hi, I'm <span id="name">Bishar </span><br />
+            Abdinur from <span id="som">Somalia</span>
+          </h1>
+        </div>
+      </div>
+      <div class="back-img">
+        <div class="back-img-content">
+          <img src="images/head.png" alt="myPic" />
+        </div>
+      </div>
+    </div>
+    <!-- ************About************ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/back.jpg" alt="Me" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              veritatis voluptatem in corporis numquam accu Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Laudantium perspiciatis
+              culpa nostrum cum repellat?santium. Eum rerum error perspiciatis
+              molestiae ab. Illum aliquam voluptate molestiae. Dolore, deserunt
+              nesciunt explicabo iure dicta saepe voluptatem vitae quibusdam
+              voluptatibus asperiores aliquid quam fuga.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Eduacation</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing web interfaces</li>
+                <li><span>Web Development</span><br />Front-end Developer</li>
+                <li>
+                  <span>App Development</span><br />Building Android/ios apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022-Current</span><br />Ul/UX Design Training at Udemy
+                  Institute
+                </li>
+                <li>
+                  <span>2023-Current</span><br />Team Work at victoria
+                  University
+                </li>
+                <li>
+                  <span>2019-2022</span><br />Ul/UX Design Executive at Bakaal
+                  jet
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020-2021</span><br />Internship at Al-macruuf Super
+                  Market
+                </li>
+                <li>
+                  <span>2022</span><br />Front-end certificate from Coursera
+                </li>
+                <li>
+                  <span>2021</span><br />IT diploma from Al-yaqeen institute
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- *******Services*********** -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              dolorum tenetur aliquid quidem nihil eaque cum voluptatem itaque
+              nulla, illo pariatur unde facilis quia magni ipsa eum quae
+              temporibus enim!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              dolorum tenetur aliquid quidem nihil eaque cum voluptatem itaque
+              nulla, illo pariatur unde facilis quia magni ipsa eum quae
+              temporibus enim!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              dolorum tenetur aliquid quidem nihil eaque cum voluptatem itaque
+              nulla, illo pariatur unde facilis quia magni ipsa eum quae
+              temporibus enim!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- **********Portfolio************* -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.jpg" alt="my work" />
+            <div class="layer">
+              <h3>Social media app</h3>
+              <p>
+                The app connects you to the talanted people around the world
+                download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-2.jpg" alt="my work" />
+            <div class="layer">
+              <h3>Web Design</h3>
+              <p>
+                The app connects you to the talanted people around the world
+                download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="work-3.jpg" alt="my work" />
+            <div class="layer">
+              <h3>Android App</h3>
+              <p>
+                The app connects you to the talanted people around the world
+                download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn white1">See More</a>
+      </div>
+    </div>
+
+    <!-- *******contact*********** -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              <a class="gmail" href="mailto:Bishar995@gmail.com"
+                >Bishar995@gmail.com</a
+              >
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 0703240815</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/bishar.ajay"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.Twitter.com/abdinur_bishar?=t"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/bishar_abdinur"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://api.whatsapp.com/send?phone=+2520907759273"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+            <a href="certificate.pdf" download class="btn btn2"
+              >Html&Css <i class="fa-solid fa-download"></i
+            ></a>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="meassage"
+                rows="6"
+                placeholder="Your Meassage"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submitt</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright &copy; by Bishar</p>
+      </div>
+    </div>
+
+    <script>
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    //
+    <!-- <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu (){
+        sidemenu.style.right = "0"
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px"
+      }
+    </script> -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
