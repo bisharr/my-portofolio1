@@ -13,9 +13,10 @@
   <body>
     <nav>
       <!-- <img id="logo" src="images/logo-1.jpg" class="logo" alt="logo" /> -->
-      <div>
+      <div class="logo-div">
         <h1 class="logo-text">B</h1>
         <span class="logo-text-span">ishar</span>
+        <img class="icon" src="sun.png" alt="" />
       </div>
       <ul id="sidemenu">
         <li><a href="#">Home</a></li>
@@ -25,7 +26,7 @@
         <li><a href="#contact">Contact</a></li>
         <li><i class="fas fa-times" onclick="closemenu()"></i></li>
       </ul>
-      <img class="icon" src="sun.png" alt="" />
+
       <i class="fas fa-bars" onclick="openmenu()"></i>
     </nav>
     <div id="header">
@@ -122,7 +123,7 @@
       <div class="container">
         <h1 class="sub-title">My services</h1>
         <div class="services-list">
-          <div>
+          <div class="services-list-content">
             <i class="fa-solid fa-code"></i>
             <h2>Web Design</h2>
             <p>
@@ -133,7 +134,7 @@
             </p>
             <a href="#">Learn More</a>
           </div>
-          <div>
+          <div class="services-list-content">
             <i class="fa-solid fa-crop"></i>
             <h2>UI/UX Design</h2>
             <p>
@@ -144,7 +145,7 @@
             </p>
             <a href="#">Learn More</a>
           </div>
-          <div>
+          <div class="services-list-content">
             <i class="fa-brands fa-app-store-ios"></i>
             <h2>App Design</h2>
             <p>
@@ -238,14 +239,22 @@
           </div>
           <div class="contact-right">
             <form action="">
-              <input type="text" name="Name" placeholder="Your Name" required />
               <input
+                class="form-input"
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                class="form-input"
                 type="email"
                 name="email"
                 placeholder="Your Email"
                 required
               />
               <textarea
+                class="form-input"
                 name="meassage"
                 rows="6"
                 placeholder="Your Meassage"
