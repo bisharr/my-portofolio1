@@ -94,14 +94,18 @@ nav ul li a:hover::after {
 }
 .back-img-content {
   width: 100%;
-  height: 500px;
+
+  height: 400px;
   /* box-shadow: 0 0 10px var(--secondaryColor); */
-  /* background-color: red; */
+  background-image: linear-gradient(to right, #ff0051d8, var(--secondaryColor));
   border-radius: 10px;
+  padding: 5px 12px;
 }
 .back-img-content img {
   width: 100%;
   height: 100%;
+  transform: scale(1.2);
+  margin-top: -35px;
 }
 .back-img {
   /* background-color: green; */
