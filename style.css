@@ -27,7 +27,12 @@ nav {
   padding: 7px 40px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+.sun {
+  position: absolute;
+  top: 1%;
+  left: 10%;
 }
 nav ul li {
   display: inline-block;
@@ -89,15 +94,15 @@ nav ul li a:hover::after {
   gap: 20px;
   align-items: center;
   justify-content: space-around;
-  /* justify-content: center; */
+
   height: 95vh;
 }
 .back-img-content {
   width: 100%;
 
-  height: 400px;
+  height: 30%;
   /* box-shadow: 0 0 10px var(--secondaryColor); */
-  background-image: linear-gradient(to right, #ff0051d8, var(--secondaryColor));
+  background-image: linear-gradient(to right, #ff0051bd, var(--secondaryColor));
   border-radius: 10px;
   padding: 5px 12px;
 }
@@ -132,10 +137,11 @@ nav ul li a:hover::after {
   font-size: 60px;
   margin-top: 20px;
 }
+.header-text p {
+  text-transform: uppercase;
+  font-weight: 800;
+}
 
-/* .header-text h1 span {
-  color: #ff004f;
-} */
 #name {
   color: #ff004f;
 }
@@ -268,15 +274,41 @@ nav ul li a:hover::after {
 }
 
 .work-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
+  /* display: grid; */
+  position: relative;
+  max-width: 500px;
+  height: 300px;
+  margin: 0 auto;
+
   margin-top: 50px;
+}
+.b12 {
+  text-align: center;
+}
+.icon-work {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  z-index: 100;
+  background-color: white;
+  border-radius: 50%;
+  padding: 2px;
+
+  color: grey;
+}
+.right-icon {
+  right: -2%;
+}
+.left-icon {
+  left: -2%;
 }
 
 .work {
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
 
@@ -525,6 +557,9 @@ nav .fas {
   .copyright {
     font-size: 14px;
   }
+  .back-img-conten {
+    height: 100%;
+  }
 }
 @media (max-width: 700px) {
   /* #som {
@@ -540,6 +575,10 @@ nav .fas {
   /* #som {
     display: block;
   } */
+  .back-img-content {
+    display: none;
+    visibility: hidden;
+  }
 
   .header-text {
     margin-top: 100px;

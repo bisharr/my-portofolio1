@@ -12,12 +12,8 @@
   </head>
   <body>
     <nav>
-      <!-- <img id="logo" src="images/logo-1.jpg" class="logo" alt="logo" /> -->
-      <div class="logo-div">
-        <h1 class="logo-text">B</h1>
-        <span class="logo-text-span">ishar</span>
-        <img class="icon" src="sun.png" alt="" />
-      </div>
+      <img class="icon sun" src="sun.png" alt="" />
+
       <ul id="sidemenu">
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -32,7 +28,7 @@
     <div id="header">
       <div class=" home container">
         <div class="header-text">
-          <p>Web developer</p>
+          <p>Front-end Developer</p>
           <h1>
             Hi, I'm <span id="name">Bishar </span><br />
             Abdinur from <span id="som">Somalia</span>
@@ -50,7 +46,7 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/back.jpg" alt="Me" />
+            <img src="images/bashka.jpg" alt="Me" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
@@ -164,8 +160,16 @@
 
     <div id="portfolio">
       <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title b12">My Work</h1>
         <div class="work-list">
+          <ion-icon
+            class="icon-work right-icon"
+            name="arrow-round-forward"
+          ></ion-icon>
+          <ion-icon
+            class="icon-work left-icon"
+            name="arrow-round-back"
+          ></ion-icon>
           <div class="work">
             <img src="work-1.jpg" alt="my work" />
             <div class="layer">
@@ -201,7 +205,6 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn white1">See More</a>
       </div>
     </div>
 
@@ -298,5 +301,6 @@
     </script> -->
 
     <script src="app.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
