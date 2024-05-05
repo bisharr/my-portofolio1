@@ -31,7 +31,7 @@ nav {
 }
 .sun {
   position: absolute;
-  top: 1%;
+  top: 3%;
   left: 10%;
 }
 nav ul li {
@@ -279,8 +279,9 @@ nav ul li a:hover::after {
   max-width: 500px;
   height: 300px;
   margin: 0 auto;
-
+  overflow: hidden;
   margin-top: 50px;
+  transition: all 0.3s;
 }
 .b12 {
   text-align: center;
@@ -303,10 +304,10 @@ nav ul li a:hover::after {
   opacity: 1;
 }
 .right-icon {
-  right: -2%;
+  right: -1%;
 }
 .left-icon {
-  left: -2%;
+  left: -1%;
 }
 
 .work {
@@ -315,6 +316,7 @@ nav ul li a:hover::after {
   border-radius: 10px;
   position: absolute;
   overflow: hidden;
+  transition: all 0.3s;
 }
 
 .work img {
@@ -464,6 +466,9 @@ form .btn2 {
 
 nav .fas {
   display: none;
+  position: absolute;
+  top: 3%;
+  right: 10%;
 }
 
 @media (max-width: 932px) {
@@ -500,6 +505,10 @@ nav .fas {
     margin-top: 100%;
     font-size: 16px;
   } */
+  .back-img-content {
+    display: none;
+    visibility: hidden;
+  }
   .header-text h1 {
     font-size: 32px;
   }
@@ -580,10 +589,6 @@ nav .fas {
   /* #som {
     display: block;
   } */
-  .back-img-content {
-    display: none;
-    visibility: hidden;
-  }
 
   .header-text {
     margin-top: 100px;
@@ -593,6 +598,9 @@ nav .fas {
   /* #som {
     display: block;
   } */
+  .icon-work {
+    transform: translateY(-120%);
+  }
 
   .header-text {
     margin-top: 160px;

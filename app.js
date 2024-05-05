@@ -37,3 +37,47 @@ icon.addEventListener('click', function () {
     }
   }
 });
+const wrokList = document.querySelector('.work-list');
+const works = document.querySelectorAll('.work');
+const rightIcon = document.querySelector('.right-icon');
+const leftIcon = document.querySelector('.left-icon');
+let currentWork = 0;
+let maxWorks = works.length;
+
+// wrokList.style.transform = 'scale(0.5)';
+const Goslides = function (go) {
+  works.forEach((work, i) => {
+    work.style.transform = `translateX(${100 * (i - go)}%)`;
+  });
+};
+Goslides(0);
+
+const nextSLide = function () {
+  if (currentWork === maxWorks - 1) {
+    currentWork = 0;
+  } else {
+    currentWork++;
+  }
+  Goslides(currentWork);
+};
+
+const prefSilde = function () {
+  if (currentWork == 0) {
+    currentWork = maxWorks - 1;
+  } else {
+    currentWork--;
+  }
+  Goslides(currentWork);
+};
+
+rightIcon.addEventListener('click', nextSLide);
+leftIcon.addEventListener('click', prefSilde);
+
+document.addEventListener('keydown', function (e) {
+  if (e.key == 'ArrowRight') {
+    nextSLide();
+  }
+  if (e.key == 'ArrowLeft') {
+    prefSilde();
+  }
+});
