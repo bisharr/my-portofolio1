@@ -81,3 +81,22 @@ document.addEventListener('keydown', function (e) {
     prefSilde();
   }
 });
+
+// Hover effects
+const listAnchors = document.querySelectorAll('.nav-li');
+const mainList = document.querySelector('.main-list');
+
+const mouseEffect = function (e) {
+  if (e.target.classList.contains('nav-li')) {
+    let link = e.target;
+
+    listAnchors.forEach((list) => {
+      if (list !== link) {
+        list.style.opacity = this;
+      }
+    });
+  }
+};
+
+mainList.addEventListener('mouseover', mouseEffect.bind(0.5));
+mainList.addEventListener('mouseout', mouseEffect.bind(1));
