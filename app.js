@@ -25,10 +25,9 @@ icon.addEventListener('click', function () {
     }
 
     icon.src = 'moon.png';
-    logo.src = 'images/logo-2.jpg';
   } else {
     icon.src = 'sun.png';
-    logo.src = 'images/logo-1.jpg';
+
     for (let i = 0; i < serviceEl.length; i++) {
       serviceEl[i].style.backgroundColor = '#e2d9d9f3';
       serviceEl[i].style.color = '#080808e1';

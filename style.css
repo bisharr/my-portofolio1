@@ -28,10 +28,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 .sun {
   position: absolute;
-  top: 3%;
+
   left: 10%;
 }
 nav ul li {
@@ -165,7 +166,9 @@ nav ul li a:hover::after {
 
 .about-col-1 img {
   width: 100%;
+  height: 520px;
   border-radius: 15px;
+  object-fit: fill;
 }
 
 .about-col-2 {
@@ -276,7 +279,7 @@ nav ul li a:hover::after {
 .work-list {
   /* display: grid; */
   position: relative;
-  max-width: 500px;
+  max-width: 600px;
   height: 300px;
   margin: 0 auto;
   overflow: hidden;
@@ -291,11 +294,11 @@ nav ul li a:hover::after {
   top: 50%;
   transform: translateY(-50%);
 
-  font-size: 25px;
+  font-size: 28px;
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.774);
   border-radius: 50%;
-  padding: 2px;
+  padding: 2.3px;
   cursor: pointer;
   color: grey;
   opacity: 0.8;
@@ -304,10 +307,10 @@ nav ul li a:hover::after {
   opacity: 1;
 }
 .right-icon {
-  right: -1%;
+  right: 1%;
 }
 .left-icon {
-  left: -1%;
+  left: 1%;
 }
 
 .work {
@@ -332,8 +335,8 @@ nav ul li a:hover::after {
 
 .layer {
   width: 100%;
-  height: 0;
-  background: linear-gradient(rgb(0, 0, 0, 0.6), #ff004f);
+  height: 100%;
+  background: linear-gradient(rgb(0, 0, 0, 0.6), #ff0051b0);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -363,12 +366,12 @@ nav ul li a:hover::after {
   background: var(--primaryClor);
   width: 60px;
   height: 60px;
+  opacity: 0.8;
   border-radius: 50%;
   text-align: center;
 }
-
-.work:hover .layer {
-  height: 100%;
+.layer a:hover {
+  opacity: 1;
 }
 
 .btn {

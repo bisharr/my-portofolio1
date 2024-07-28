@@ -46,10 +46,10 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/bashka.jpg" alt="Me" />
+            <img src="images/bashka2.jpg" alt="Me" />
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
+            <h1 class="sub-title">About Us</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
               veritatis voluptatem in corporis numquam accu Lorem ipsum, dolor
@@ -160,7 +160,7 @@
 
     <div id="portfolio">
       <div class="container">
-        <h1 class="sub-title b12">My Work</h1>
+        <h1 class="sub-title b12">Our Work</h1>
         <div class="work-list">
           <ion-icon
             class="icon-work right-icon"
@@ -214,13 +214,20 @@
       <div class="container">
         <div class="row">
           <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
+            <h1 class="sub-title">Contact Us</h1>
             <p>
               <i class="fa-solid fa-paper-plane"></i>
               <a class="gmail" href="mailto:Bishar995@gmail.com"
                 >Bishar995@gmail.com</a
               >
             </p>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              <a class="gmail" href="mailto:Bishar995@gmail.com"
+                >Bishar995@gmail.com</a
+              >
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 0703240815</p>
             <p><i class="fa-solid fa-phone"></i> 0703240815</p>
             <div class="social-icons">
               <a href="https://www.facebook.com/bishar.ajay"
@@ -237,32 +244,42 @@
               ></a>
             </div>
             <a href="certificate.pdf" download class="btn btn2"
-              >Html&Css <i class="fa-solid fa-download"></i
+              >CV<i class="fa-solid fa-download"></i
             ></a>
           </div>
           <div class="contact-right">
-            <form action="">
+            <form
+              class="form-submit"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
               <input
-                class="form-input"
+                type="hidden"
+                name="access_key"
+                value="38a04918-220a-46af-b2aa-0c082ae0fb4e"
+              />
+              <input
+                class="form-input input-name"
                 type="text"
                 name="Name"
                 placeholder="Your Name"
                 required
               />
               <input
-                class="form-input"
+                class="form-input input-gmail"
                 type="email"
                 name="email"
                 placeholder="Your Email"
                 required
               />
               <textarea
-                class="form-input"
+                class="form-input input-text"
                 name="meassage"
                 rows="6"
                 placeholder="Your Meassage"
+                required
               ></textarea>
-              <button type="submit" class="btn btn2">Submitt</button>
+              <button type="submit" class="btn btn2 btn-submit">Submitt</button>
             </form>
           </div>
         </div>
